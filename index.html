@@ -91,25 +91,24 @@ nav.scrolled{box-shadow:0 2px 24px rgba(122,148,114,.12)}
 .nav-hamburger span{width:22px;height:2px;background:var(--sage-deep);border-radius:2px}
 
 /* HERO */
-.hero{min-height:100vh;display:flex;align-items:center;padding:120px 5% 80px;position:relative;overflow:hidden}
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 5% 80px;position:relative;overflow:hidden;background:linear-gradient(135deg,#4a6741 0%,#7a9472 40%,#9ab594 70%,#c4d4c0 100%)}
 .hero-bg{position:absolute;inset:0;z-index:0}
-.sage-scene{position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:.85}
 @keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(0,-10px)}}
 .hero-content{position:relative;z-index:1;max-width:640px}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius-pill);padding:6px 16px;font-size:13px;font-weight:600;color:var(--sage-deep);margin-bottom:24px;letter-spacing:.03em}
-.hero-eyebrow::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--sage);display:inline-block}
-.hero-logo-large{height:80px;width:auto;margin-bottom:16px;display:block}
-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,56px);font-weight:500;line-height:1.2;color:var(--text);margin-bottom:20px;letter-spacing:-.01em}
-h1 em{font-style:italic;color:var(--sage-deep)}
-.hero-sub{font-size:17px;color:var(--muted);font-weight:400;max-width:500px;margin-bottom:36px;line-height:1.8}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);border-radius:var(--radius-pill);padding:6px 16px;font-size:13px;font-weight:600;color:white;margin-bottom:24px;letter-spacing:.03em;backdrop-filter:blur(8px)}
+.hero-eyebrow::before{content:'';width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.8);display:inline-block}
+.hero-logo-large{height:160px;width:auto;margin-bottom:20px;display:block}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,56px);font-weight:500;line-height:1.2;color:white;margin-bottom:20px;letter-spacing:-.01em}
+h1 em{font-style:italic;color:var(--tan-light)}
+.hero-sub{font-size:17px;color:rgba(255,255,255,.88);font-weight:400;max-width:500px;margin-bottom:36px;line-height:1.8}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:var(--radius-pill);font-size:15px;font-weight:600;cursor:pointer;text-decoration:none;border:none;font-family:'Nunito',sans-serif;transition:all .25s}
 .btn-primary{background:var(--sage);color:white}
 .btn-primary:hover{background:var(--sage-deep);transform:translateY(-2px);box-shadow:0 8px 28px rgba(122,148,114,.35)}
-.btn-outline{background:transparent;color:var(--sage-deep);border:2px solid var(--sage-mid)}
-.btn-outline:hover{background:var(--sage-light);border-color:var(--sage)}
+.btn-outline{background:rgba(255,255,255,.15);color:white;border:2px solid rgba(255,255,255,.5);backdrop-filter:blur(8px)}
+.btn-outline:hover{background:rgba(255,255,255,.25);border-color:white}
 .hero-trust{display:flex;align-items:center;gap:16px;margin-top:40px;flex-wrap:wrap}
-.hero-trust-text{font-size:13px;color:var(--muted);font-weight:500}
+.hero-trust-text{font-size:13px;color:rgba(255,255,255,.8);font-weight:500}
 .trust-icons{display:flex;gap:8px;align-items:center}
 .trust-icon{font-size:22px;line-height:1}
 
@@ -272,119 +271,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <div class="hero-bg">
-    <!-- BURNING SAGE ANIMATION -->
-    <svg class="sage-scene" viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-      <defs>
-        <!-- Smoke gradients -->
-        <radialGradient id="smoke1" cx="50%" cy="100%" r="50%">
-          <stop offset="0%" stop-color="#b8cfb4" stop-opacity="0.5"/>
-          <stop offset="100%" stop-color="#b8cfb4" stop-opacity="0"/>
-        </radialGradient>
-        <radialGradient id="smoke2" cx="50%" cy="100%" r="50%">
-          <stop offset="0%" stop-color="#c4a87a" stop-opacity="0.35"/>
-          <stop offset="100%" stop-color="#c4a87a" stop-opacity="0"/>
-        </radialGradient>
-        <radialGradient id="smoke3" cx="50%" cy="100%" r="50%">
-          <stop offset="0%" stop-color="#edf2ea" stop-opacity="0.6"/>
-          <stop offset="100%" stop-color="#edf2ea" stop-opacity="0"/>
-        </radialGradient>
-        <!-- Ember glow -->
-        <radialGradient id="ember" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#e8a04a" stop-opacity="0.9"/>
-          <stop offset="40%" stop-color="#c4a87a" stop-opacity="0.6"/>
-          <stop offset="100%" stop-color="#c4a87a" stop-opacity="0"/>
-        </radialGradient>
-        <!-- Blur filter for smoke wisps -->
-        <filter id="blur-sm"><feGaussianBlur stdDeviation="3"/></filter>
-        <filter id="blur-md"><feGaussianBlur stdDeviation="6"/></filter>
-        <filter id="blur-lg"><feGaussianBlur stdDeviation="12"/></filter>
-        <filter id="blur-xl"><feGaussianBlur stdDeviation="20"/></filter>
-      </defs>
-
-      <!-- SAGE BUNDLE — right side, slightly back -->
-      <g transform="translate(580, 480)">
-        <!-- Bundle stems -->
-        <g opacity="0.85">
-          <rect x="-3" y="-80" width="5" height="90" rx="2" fill="#7a9472" transform="rotate(-8)"/>
-          <rect x="4" y="-75" width="4" height="85" rx="2" fill="#4a6741" transform="rotate(2)"/>
-          <rect x="-8" y="-70" width="4" height="80" rx="2" fill="#7a9472" transform="rotate(-14)"/>
-          <rect x="9" y="-65" width="3" height="75" rx="2" fill="#5a8060" transform="rotate(8)"/>
-          <!-- Binding twine -->
-          <ellipse cx="0" cy="10" rx="12" ry="4" fill="#c4a87a" opacity="0.9"/>
-          <rect x="-12" y="7" width="24" height="8" rx="3" fill="#c4a87a" opacity="0.7"/>
-        </g>
-        <!-- Sage leaves on stems -->
-        <g fill="#7a9472" opacity="0.8">
-          <ellipse cx="-6" cy="-55" rx="5" ry="12" transform="rotate(-25,-6,-55)"/>
-          <ellipse cx="6" cy="-50" rx="4" ry="10" transform="rotate(15,6,-50)"/>
-          <ellipse cx="-10" cy="-40" rx="4" ry="9" transform="rotate(-30,-10,-40)"/>
-          <ellipse cx="10" cy="-38" rx="3" ry="8" transform="rotate(20,10,-38)"/>
-          <ellipse cx="-4" cy="-28" rx="5" ry="11" transform="rotate(-10,-4,-28)"/>
-          <ellipse cx="8" cy="-22" rx="4" ry="9" transform="rotate(25,8,-22)"/>
-        </g>
-        <!-- Glowing tip/ember -->
-        <ellipse cx="0" cy="-82" rx="6" ry="4" fill="url(#ember)">
-          <animate attributeName="opacity" values="0.7;1;0.8;1;0.7" dur="2s" repeatCount="indefinite"/>
-          <animate attributeName="rx" values="6;8;6;7;6" dur="1.5s" repeatCount="indefinite"/>
-        </ellipse>
-        <ellipse cx="0" cy="-82" rx="3" ry="2" fill="#e8a04a" opacity="0.9">
-          <animate attributeName="opacity" values="0.9;0.5;1;0.7;0.9" dur="0.8s" repeatCount="indefinite"/>
-        </ellipse>
-      </g>
-
-      <!-- SMOKE WISPS rising from bundle -->
-      <!-- Main waft 1 -->
-      <path d="M580,398 C575,360 590,330 578,295 C566,260 582,225 570,185 C558,145 572,110 562,70" 
-            fill="none" stroke="url(#smoke1)" stroke-width="28" stroke-linecap="round" opacity="0" filter="url(#blur-md)">
-        <animate attributeName="opacity" values="0;0.6;0.8;0.6;0.3;0" dur="6s" repeatCount="indefinite" begin="0s"/>
-        <animateTransform attributeName="transform" type="translate" values="0,0;-8,0;5,0;-3,0;8,0;0,0" dur="6s" repeatCount="indefinite"/>
-      </path>
-      <!-- Waft 2 offset -->
-      <path d="M582,398 C592,355 578,318 590,278 C602,238 585,198 597,158 C609,118 593,80 605,40"
-            fill="none" stroke="url(#smoke3)" stroke-width="22" stroke-linecap="round" opacity="0" filter="url(#blur-md)">
-        <animate attributeName="opacity" values="0;0;0.5;0.7;0.5;0.2;0" dur="6s" repeatCount="indefinite" begin="1.5s"/>
-        <animateTransform attributeName="transform" type="translate" values="0,0;10,0;-5,0;8,0;-3,0;5,0" dur="5s" repeatCount="indefinite" begin="1.5s"/>
-      </path>
-      <!-- Thin wispy curl -->
-      <path d="M579,395 C572,350 584,310 574,268 C564,226 577,184 567,140"
-            fill="none" stroke="url(#smoke2)" stroke-width="12" stroke-linecap="round" opacity="0" filter="url(#blur-sm)">
-        <animate attributeName="opacity" values="0;0.4;0.6;0.4;0.1;0" dur="4.5s" repeatCount="indefinite" begin="0.8s"/>
-        <animateTransform attributeName="transform" type="translate" values="0,0;-12,0;6,0;-8,0;12,0" dur="4.5s" repeatCount="indefinite" begin="0.8s"/>
-      </path>
-      <!-- Wide diffuse cloud -->
-      <ellipse cx="578" cy="300" rx="60" ry="30" fill="url(#smoke3)" filter="url(#blur-xl)" opacity="0">
-        <animate attributeName="opacity" values="0;0.3;0.5;0.3;0" dur="8s" repeatCount="indefinite" begin="2s"/>
-        <animate attributeName="cy" values="380;300;220;140;60" dur="8s" repeatCount="indefinite" begin="2s"/>
-        <animate attributeName="rx" values="30;50;70;90;110" dur="8s" repeatCount="indefinite" begin="2s"/>
-      </ellipse>
-      <!-- Second wide cloud -->
-      <ellipse cx="575" cy="320" rx="40" ry="20" fill="url(#smoke1)" filter="url(#blur-xl)" opacity="0">
-        <animate attributeName="opacity" values="0;0.25;0.4;0.25;0" dur="7s" repeatCount="indefinite" begin="0s"/>
-        <animate attributeName="cy" values="400;330;250;170;90" dur="7s" repeatCount="indefinite" begin="0s"/>
-        <animate attributeName="rx" values="20;40;60;80;100" dur="7s" repeatCount="indefinite" begin="0s"/>
-      </ellipse>
-
-      <!-- SMALL SECOND SAGE STICK — left background, subtle -->
-      <g transform="translate(120, 560)" opacity="0.5">
-        <rect x="-2" y="-50" width="4" height="60" rx="2" fill="#7a9472" transform="rotate(-5)"/>
-        <rect x="3" y="-45" width="3" height="55" rx="2" fill="#4a6741" transform="rotate(8)"/>
-        <ellipse cx="2" cy="12" rx="8" ry="3" fill="#c4a87a" opacity="0.8"/>
-        <ellipse cx="0" cy="-52" rx="4" ry="3" fill="url(#ember)" opacity="0.6">
-          <animate attributeName="opacity" values="0.4;0.8;0.5;0.8;0.4" dur="2.5s" repeatCount="indefinite"/>
-        </ellipse>
-        <!-- Thin smoke from second stick -->
-        <path d="M2,490 C-5,455 8,420 0,385 C-8,350 5,315 -3,280"
-              fill="none" stroke="url(#smoke1)" stroke-width="10" stroke-linecap="round" opacity="0" filter="url(#blur-sm)" transform="translate(-2,-490)">
-          <animate attributeName="opacity" values="0;0.3;0.4;0.3;0" dur="5s" repeatCount="indefinite" begin="1s"/>
-          <animateTransform attributeName="transform" type="translate" values="-2,-490;-10,-490;4,-490;-6,-490;8,-490" dur="5s" repeatCount="indefinite" begin="1s"/>
-        </path>
-      </g>
-
-      <!-- Ambient soft glow behind everything -->
-      <ellipse cx="580" cy="500" rx="120" ry="60" fill="#f5f0e6" filter="url(#blur-xl)" opacity="0.4"/>
-    </svg>
-  </div>
+  <div class="hero-bg"></div>
   <div class="hero-content">
     <div class="hero-eyebrow fade-up d1">Now Accepting New Clients in Nebraska</div>
     <img src="sage-logo.png" alt="Sage Therapy & Consulting" class="hero-logo-large fade-up d2">
