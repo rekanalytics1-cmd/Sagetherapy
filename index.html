@@ -45,7 +45,11 @@
   "availableService": [
     { "@type": "MedicalTherapy", "name": "Individual Therapy" },
     { "@type": "MedicalTherapy", "name": "Cognitive Behavioral Therapy (CBT)" },
-    { "@type": "MedicalTherapy", "name": "Acceptance and Commitment Therapy (ACT)" },
+    { "@type": "MedicalTherapy", "name": "Cognitive Processing Therapy (CPT)" },
+    { "@type": "MedicalTherapy", "name": "Interpersonal Psychotherapy (IPT)" },
+    { "@type": "MedicalTherapy", "name": "DBT-Informed Therapy" },
+    { "@type": "MedicalTherapy", "name": "Solution-Focused Therapy" },
+    { "@type": "MedicalTherapy", "name": "Internal Family Systems-Informed Approach" },
     { "@type": "MedicalTherapy", "name": "Perinatal Mental Health" },
     { "@type": "MedicalTherapy", "name": "ADHD Therapy" }
   ],
@@ -57,8 +61,8 @@
   },
   "sameAs": [
     "https://kay-arispe.clientsecure.me",
-    "https://facebook.com/kayarispepsychotherapy",
-    "https://instagram.com/kayarispepsychotherapy"
+    "https://facebook.com/sagetherapyne",
+    "https://instagram.com/sagetherapyne"
   ]
 }
 </script>
@@ -156,6 +160,20 @@ h2 em{font-style:italic;color:var(--sage-deep)}
 .service-card p{font-size:14.5px;color:var(--muted);line-height:1.75}
 .service-detail{margin-top:16px;padding-top:16px;border-top:1px solid var(--border);font-size:13px;color:var(--sage-deep);font-weight:600}
 
+
+/* TRAINING & CLINICAL APPROACH */
+#approach{background:var(--white)}
+.approach-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:stretch;margin-top:44px}
+.cert-card,.modalities-card{background:var(--cream);border:1px solid var(--border);border-radius:var(--radius-xl);padding:34px}
+.cert-card{text-align:center}
+.pmhc-badge{width:min(100%,300px);height:auto;display:block;margin:0 auto 22px}
+.cert-card h3,.modalities-card h3{font-family:'Cormorant Garamond',serif;font-size:25px;font-weight:500;margin-bottom:12px}
+.cert-card p,.modalities-card p{font-size:14.5px;color:var(--muted);line-height:1.8}
+.modality-list{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+.modality{background:var(--sage-light);border:1px solid var(--sage-mid);border-radius:var(--radius-pill);padding:8px 14px;font-size:13px;font-weight:600;color:var(--sage-deep)}
+.emdr-note{margin-top:24px;background:var(--tan-light);border:1px solid var(--tan-mid);border-radius:16px;padding:18px;font-size:14px;color:var(--text);line-height:1.75}
+.review-link-wrap{text-align:center;margin-top:28px}
+
 /* INSURANCE STRIP */
 .insurance-strip{background:var(--sage-light);border-radius:var(--radius-xl);padding:32px 40px;margin:0 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;border:1px solid var(--sage-mid)}
 .insurance-strip h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--text)}
@@ -245,7 +263,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
   .hero{grid-template-columns:1fr}
   .hero-right{display:none}
   .hero-left{padding:120px 5% 60px;min-height:100vh}
-  .about-grid,.booking-intro,.contact-grid,.services-grid{grid-template-columns:1fr!important}
+  .about-grid,.booking-intro,.contact-grid,.services-grid,.approach-grid{grid-template-columns:1fr!important}
   .about-image{aspect-ratio:3/2}
   .about-badge{position:static;margin-top:16px;display:inline-flex;flex-direction:column}
   .insurance-strip{flex-direction:column;text-align:center}
@@ -270,6 +288,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#approach">Approach</a>
     <a href="#booking">Get Started</a>
     <a href="#contact">Contact</a>
     <a href="#contact" class="nav-cta btn">Contact Kay</a>
@@ -334,7 +353,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
       </div>
       <div class="about-badge">
         <div class="about-badge-num">LICSW, PMH-C</div>
-        <div class="about-badge-text">Licensed Independent Clinical<br>Social Worker · Perinatal Mental Health</div>
+        <div class="about-badge-text">Licensed Independent Clinical<br>Social Worker · Perinatal Mental Health - Certified</div>
       </div>
     </div>
     <div class="about-text">
@@ -383,6 +402,36 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
   </div>
 </section>
 
+
+<!-- TRAINING & CLINICAL APPROACH -->
+<section id="approach">
+  <div class="services-header">
+    <div class="section-label">Training & Clinical Approach</div>
+    <h2>Evidence-informed care, tailored to <em>you</em></h2>
+    <p class="section-sub">Therapy is collaborative and individualized. I draw from several evidence-informed approaches based on your goals, needs, and what feels most useful in your life.</p>
+  </div>
+  <div class="approach-grid">
+    <div class="cert-card">
+      <img src="PMH-C Badge.png" alt="Postpartum Support International PMH-C certification badge for Kay Arispe" class="pmhc-badge">
+      <h3>Perinatal Mental Health - Certified</h3>
+      <p>I hold the PMH-C credential through Postpartum Support International (PSI). This certification reflects specialized training in perinatal mental health and supports my work with clients during pregnancy, postpartum, and the transition to parenthood.</p>
+    </div>
+    <div class="modalities-card">
+      <h3>Therapy Modalities</h3>
+      <p>I integrate different therapeutic approaches rather than using a one-size-fits-all model. Depending on your needs, our work may include:</p>
+      <div class="modality-list">
+        <span class="modality">Cognitive Behavioral Therapy (CBT)</span>
+        <span class="modality">Cognitive Processing Therapy (CPT)</span>
+        <span class="modality">Interpersonal Psychotherapy (IPT)</span>
+        <span class="modality">DBT-Informed Therapy</span>
+        <span class="modality">Solution-Focused Therapy</span>
+        <span class="modality">Internal Family Systems-Informed Approach</span>
+      </div>
+      <div class="emdr-note"><strong>Coming in 2027:</strong> I plan to begin EMDR training in October 2026, with the goal of offering EMDR to clients after the first of the year once appropriate training requirements have been completed.</div>
+    </div>
+  </div>
+</section>
+
 <!-- INSURANCE STRIP -->
 <div class="insurance-strip">
   <div>
@@ -412,12 +461,16 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
   <div class="testimonials-grid">
     <div class="testimonial-card">
       <p class="testimonial-text">I can't say enough positive things about my experience. She made me feel comfortable and truly heard. She has an incredible ability to know when to offer guidance and when to simply listen, which made each session feel exactly like what I needed.</p>
-      <div class="testimonial-author">— Google Review ⭐⭐⭐⭐⭐</div>
+      <div class="testimonial-author">— Anonymous Google Review ⭐⭐⭐⭐⭐</div>
     </div>
     <div class="testimonial-card">
       <p class="testimonial-text">I started seeing Kay shortly after I retired — a major life event. She is so good at what she does. She really listens, and in future sessions, refers to what I've said in prior sessions, tying things together.</p>
-      <div class="testimonial-author">— Google Review ⭐⭐⭐⭐⭐</div>
+      <div class="testimonial-author">— Anonymous Google Review ⭐⭐⭐⭐⭐</div>
     </div>
+  </div>
+  <div class="review-link-wrap">
+    <a href="https://search.google.com/local/reviews?placeid=ChIJodg4RlocWUARkMZ2ylL81_s" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Read More Reviews on Google →</a>
+    <p style="font-size:12.5px;color:var(--muted);margin-top:10px">Reviews shown here are presented without reviewer names or other identifying information.</p>
   </div>
 </section>
 
@@ -429,7 +482,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
   <div class="booking-intro">
     <div>
       <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;margin-bottom:12px">Starting Therapy</h3>
-      <p style="font-size:15px;color:var(--muted);line-height:1.75">Rather than booking directly into the therapy calendar, new therapy clients start by reaching out first.</p>
+      <p style="font-size:15px;color:var(--muted);line-height:1.75">New therapy clients are asked to begin by completing the secure contact form.</p>
       <div class="booking-steps">
         <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Complete the secure contact form</strong><span>Share a little about what you’re looking for, your location, and any questions you have.</span></div></div>
         <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Kay reviews your inquiry</strong><span>Your needs, availability, and whether the practice is an appropriate fit are considered before scheduling.</span></div></div>
@@ -479,7 +532,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
         <div class="contact-icon ci-warm">🕐</div>
         <div class="contact-item-text">
           <strong>Office Hours</strong>
-          <span>Contact for current availability</span>
+          <span>Appointments accepted Monday–Thursday<br>8:00 AM–2:00 PM</span>
         </div>
       </div>
       <div class="contact-item">
@@ -487,8 +540,8 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
         <div class="contact-item-text">
           <strong>Follow Along</strong>
           <span>
-            <a href="https://facebook.com/kayarispepsychotherapy" target="_blank">Facebook</a> &nbsp;·&nbsp;
-            <a href="https://instagram.com/kayarispepsychotherapy" target="_blank">Instagram</a>
+            <a href="https://facebook.com/sagetherapyne" target="_blank">Facebook @sagetherapyne</a> &nbsp;·&nbsp;<br>
+            <a href="https://instagram.com/sagetherapyne" target="_blank">Instagram @sagetherapyne</a>
           </span>
         </div>
       </div>
@@ -512,7 +565,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
         </div>
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">Do you specialize in postpartum or perinatal mental health?<span class="faq-icon">+</span></div>
-          <div class="faq-answer"><p>Yes — I hold the PMH-C (Perinatal Mental Health Certified) credential and specialize in supporting women through pregnancy, postpartum, and the identity shifts of new motherhood. You don't have to navigate this season alone.</p></div>
+          <div class="faq-answer"><p>Yes — I hold the PMH-C (Perinatal Mental Health - Certified) credential and specialize in supporting women through pregnancy, postpartum, and the identity shifts of new motherhood. You don't have to navigate this season alone.</p></div>
         </div>
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">Do you work with women with ADHD?<span class="faq-icon">+</span></div>
@@ -537,13 +590,14 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
   <div class="footer-name">Sage Therapy & Consulting</div>
   <div class="footer-tagline">Kay Arispe, LICSW, PMH-C · Blair, Nebraska</div>
   <div class="footer-social">
-    <a href="https://facebook.com/kayarispepsychotherapy" target="_blank">Facebook</a>
-    <a href="https://instagram.com/kayarispepsychotherapy" target="_blank">Instagram</a>
+    <a href="https://facebook.com/sagetherapyne" target="_blank">Facebook</a>
+    <a href="https://instagram.com/sagetherapyne" target="_blank">Instagram</a>
   </div>
   <div class="footer-links">
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#approach">Approach</a>
     <a href="#booking">Get Started</a>
     <a href="#contact">Contact</a>
   </div>
