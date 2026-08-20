@@ -219,13 +219,13 @@ h2 em{font-style:italic;color:var(--sage-deep)}
 .sp-book-note{font-size:12px;color:var(--muted);font-weight:500}
 
 /* TESTIMONIALS */
-#testimonials{background:var(--cream)}
-.testimonials-header{text-align:center;margin-bottom:48px}
-.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
-.testimonial-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-xl);padding:32px;position:relative}
-.testimonial-card::before{content:'"';font-family:'Cormorant Garamond',serif;font-size:80px;color:var(--sage-light);position:absolute;top:12px;left:24px;line-height:1}
-.testimonial-text{font-size:15px;color:var(--muted);line-height:1.8;margin-top:32px;font-style:italic}
-.testimonial-author{margin-top:16px;font-size:13px;font-weight:600;color:var(--sage-deep)}
+#testimonials{background:var(--cream);padding-top:64px;padding-bottom:64px}
+.testimonials-header{text-align:center;margin-bottom:28px}
+.testimonials-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:1000px;margin:0 auto}
+.testimonial-card{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:22px 24px;position:relative}
+.testimonial-card::before{content:'"';font-family:'Cormorant Garamond',serif;font-size:54px;color:var(--sage-light);position:absolute;top:8px;left:18px;line-height:1}
+.testimonial-text{font-size:13.5px;color:var(--muted);line-height:1.65;margin-top:22px;font-style:italic}
+.testimonial-author{margin-top:12px;font-size:12px;font-weight:600;color:var(--sage-deep)}
 
 /* CONTACT */
 #contact{background:var(--white)}
@@ -304,7 +304,6 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
     <a href="#services">Therapy</a>
     <a href="#consulting">Consulting</a>
     <a href="#approach">Approach</a>
-    <a href="#services">Get Started</a>
     <a href="#contact">Contact</a>
   </div>
   <div class="nav-hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
@@ -405,19 +404,6 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
     <div class="section-label">Therapy</div>
     <p class="section-sub" style="max-width:none;margin:0 auto">Individual therapy for women and men experiencing depression, anxiety, trauma, ADHD, stress, burnout, life transitions, relationship concerns, caregiver stress, and other challenges. Specialized perinatal mental health support is available through pregnancy, postpartum, and the transition to parenthood.</p>
     <div class="service-detail" style="margin-top:22px;border-top:none;padding-top:0">45–60 minute sessions based on the therapist and client’s agreed-upon treatment plan · In-person in Blair & telehealth in Nebraska and Iowa</div>
-    <div style="margin-top:46px;padding-top:38px;border-top:1px solid var(--border);text-align:left">
-      <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:500;margin-bottom:12px;text-align:center">Starting Therapy</h3>
-      <p style="font-size:15px;color:var(--muted);line-height:1.75;text-align:center;max-width:620px;margin:0 auto 24px">New therapy clients are asked to begin by completing the secure contact form so we can review your needs, availability, and which therapist may be the best fit.</p>
-      <div class="booking-steps" style="max-width:650px;margin:0 auto">
-        <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Complete the secure contact form</strong><span>Share a little about what you’re looking for, your location, and any questions you have.</span></div></div>
-        <div class="step"><div class="step-num">2</div><div class="step-text"><strong>We review your inquiry</strong><span>Your needs, availability, and which therapist may be the best fit are considered before scheduling.</span></div></div>
-        <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Discuss next steps</strong><span>If it looks like a good fit, we’ll connect with you about therapist availability and the next steps for beginning therapy.</span></div></div>
-        <div class="step"><div class="step-num">4</div><div class="step-text"><strong>Schedule your first session</strong><span>Once fit and availability are confirmed, you’ll receive the information needed to move forward.</span></div></div>
-      </div>
-      <div style="text-align:center">
-        <a href="https://kay-arispe.clientsecure.me/contact-widget" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top:28px">Complete Therapy Contact Form →</a>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -469,6 +455,24 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
     <span class="ins-tag">✓ Self-Pay</span>
   </div>
 </div>
+
+<section id="starting-therapy" style="background:var(--white);padding-top:64px;padding-bottom:64px">
+  <div style="max-width:800px;margin:0 auto">
+    <div style="text-align:left">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:500;margin-bottom:12px;text-align:center">Starting Therapy</h3>
+      <p style="font-size:15px;color:var(--muted);line-height:1.75;text-align:center;max-width:620px;margin:0 auto 24px">New therapy clients are asked to begin by completing the secure contact form so we can review your needs, availability, and which therapist may be the best fit.</p>
+      <div class="booking-steps" style="max-width:650px;margin:0 auto">
+        <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Complete the secure contact form</strong><span>Share a little about what you’re looking for, your location, and any questions you have.</span></div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-text"><strong>We review your inquiry</strong><span>Your needs, availability, and which therapist may be the best fit are considered before scheduling.</span></div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Discuss next steps</strong><span>If it looks like a good fit, we’ll connect with you about therapist availability and the next steps for beginning therapy.</span></div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-text"><strong>Schedule your first session</strong><span>Once fit and availability are confirmed, you’ll receive the information needed to move forward.</span></div></div>
+      </div>
+      <div style="text-align:center">
+        <a href="https://kay-arispe.clientsecure.me/contact-widget" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top:28px">Complete Therapy Contact Form →</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- TESTIMONIALS -->
 <section id="testimonials">
@@ -609,12 +613,6 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
       </div>
     </div>
     <div class="contact-card">
-      <h3>Send a Secure Message</h3>
-      <p style="font-size:14px;color:var(--muted);margin-bottom:20px">Looking for therapy? Please begin with this secure contact form so we can review your needs and determine whether the practice is an appropriate fit before scheduling. You can also use the form for questions about therapy services, fees, and availability.</p>
-      <a href="https://kay-arispe.clientsecure.me/contact-widget" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-bottom:16px">✉ Complete the Therapy Contact Form →</a>
-      <div style="display:flex;align-items:center;gap:8px;background:var(--sage-light);border-radius:10px;padding:10px 14px;font-size:12.5px;color:var(--sage-deep);font-weight:600;margin-bottom:28px;border:1px solid var(--sage-mid)">
-        <span>🔒</span> HIPAA-compliant · Powered by SimplePractice
-      </div>
       <h3 style="margin-bottom:16px">Common Questions</h3>
       <div class="faq-list">
         <div class="faq-item">
@@ -665,7 +663,6 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
     <a href="#services">Therapy</a>
     <a href="#consulting">Consulting</a>
     <a href="#approach">Approach</a>
-    <a href="#services">Get Started</a>
     <a href="#contact">Contact</a>
   </div>
   <hr class="footer-divider">
