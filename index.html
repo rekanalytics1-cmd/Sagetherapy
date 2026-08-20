@@ -161,6 +161,20 @@ h2 em{font-style:italic;color:var(--sage-deep)}
 .service-detail{margin-top:16px;padding-top:16px;border-top:1px solid var(--border);font-size:13px;color:var(--sage-deep);font-weight:600}
 
 
+/* CONSULTING */
+#consulting{background:var(--tan-light)}
+.consulting-summary{max-width:1000px;margin:0 auto;background:var(--white);border:1px solid var(--tan-mid);border-radius:var(--radius-xl);padding:42px}
+.consulting-summary p,.consulting-detail p{color:var(--muted);font-size:15px;line-height:1.8;margin-bottom:16px}
+.consulting-detail{max-width:1050px;margin:34px auto 0}
+.consulting-intro{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-xl);padding:42px;margin-bottom:24px}
+.consulting-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:24px 0}
+.consulting-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-xl);padding:30px}
+.consulting-card h3,.consulting-extra h3{font-family:'Cormorant Garamond',serif;font-size:25px;font-weight:500;margin-bottom:8px}
+.consulting-price{font-weight:700;color:var(--sage-deep);margin-bottom:14px}
+.consulting-card ul,.consulting-extra ul{padding-left:20px;color:var(--muted);font-size:14px;line-height:1.8}
+.consulting-extra{background:var(--cream);border:1px solid var(--border);border-radius:var(--radius-xl);padding:34px;margin-top:20px}
+.consulting-cta{text-align:center;background:var(--sage-light);border:1px solid var(--sage-mid);border-radius:var(--radius-xl);padding:38px;margin-top:24px}
+
 /* TRAINING & CLINICAL APPROACH */
 #approach{background:var(--white)}
 .approach-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:stretch;margin-top:44px}
@@ -263,7 +277,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
   .hero{grid-template-columns:1fr}
   .hero-right{display:none}
   .hero-left{padding:120px 5% 60px;min-height:100vh}
-  .about-grid,.booking-intro,.contact-grid,.services-grid,.approach-grid{grid-template-columns:1fr!important}
+  .about-grid,.booking-intro,.contact-grid,.services-grid,.approach-grid,.consulting-options{grid-template-columns:1fr!important}
   .about-image{aspect-ratio:3/2}
   .about-badge{position:static;margin-top:16px;display:inline-flex;flex-direction:column}
   .insurance-strip{flex-direction:column;text-align:center}
@@ -288,6 +302,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#consulting">Consulting</a>
     <a href="#approach">Approach</a>
     <a href="#booking">Get Started</a>
     <a href="#contact">Contact</a>
@@ -402,14 +417,75 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
     </div>
     <div class="service-card">
       <div class="service-icon" style="background:var(--tan-light)">💼</div>
-      <h3>Consulting for Clinicians</h3>
-      <p>Practical guidance for therapists who are ready to launch or grow a private practice. Consulting can help you clarify your vision, establish essential systems, think through practice operations, and navigate the realities of practice ownership with greater confidence and direction.</p>
-      <div class="service-detail">Free 15-minute discovery call · Consulting is not a clinical service</div>
-      <a href="https://kay-arispe.clientsecure.me" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top:22px">Book a Discovery Call</a>
+      <h3>Consulting for Therapists</h3>
+      <p>Starting or growing a private practice comes with a lot of questions that graduate school probably did not prepare you for.</p>
+      <p style="margin-top:12px">Sage Therapy and Consulting provides practical, individualized support for therapists navigating practice startup, insurance credentialing, EHR systems, billing workflows, documentation processes, adding clinicians, and the many other moving pieces involved in running a practice.</p>
+      <div class="service-detail"><strong>Individual consulting starts at $150 per hour, with intensive sessions and practice launch packages available.</strong></div>
+      <a href="#consulting" class="btn btn-primary" style="margin-top:22px">Learn More About Consulting</a>
     </div>
   </div>
 </section>
 
+
+<!-- PRIVATE PRACTICE CONSULTING -->
+<section id="consulting">
+  <div class="consulting-summary">
+    <div class="section-label">Private Practice Consulting</div>
+    <h2>Build a Practice That Actually <em>Works for You</em></h2>
+    <p>Starting or growing a private practice can feel like a strange combination of exciting, overwhelming, and <em>why did no one tell me about this part?</em></p>
+    <p>At <strong>Sage Therapy and Consulting</strong>, we offer practical, one-on-one consulting for therapists who want support navigating the business side of private practice. Whether you are starting from scratch, trying to get credentialed with insurance, setting up your systems, or realizing your current processes need some serious attention, consulting is designed to help you move forward with more clarity and less trial and error.</p>
+    <p>This is practical support from someone who understands both clinical work and the realities of running a therapy practice.</p>
+  </div>
+  <div class="consulting-detail">
+    <div class="section-label">Consulting Services</div>
+    <div class="consulting-options">
+      <div class="consulting-card">
+        <h3>Private Practice Consulting</h3>
+        <div class="consulting-price">$150 | 60 minutes</div>
+        <p>A focused one-on-one consultation centered around the questions or challenges that matter most to you.</p>
+        <p><strong>Topics may include:</strong></p>
+        <ul><li>Starting a private practice</li><li>Insurance credentialing and payer enrollment</li><li>CAQH and NPI setup</li><li>EHR and SimplePractice workflows</li><li>Billing and claims processes</li><li>Intake and documentation systems</li><li>Practice policies and procedures</li><li>Fee-setting and financial considerations</li><li>Adding clinicians or independent contractors</li><li>Practice organization and efficiency</li><li>Identifying next steps when you feel stuck</li></ul>
+      </div>
+      <div class="consulting-card">
+        <h3>Practice Strategy Intensive</h3>
+        <div class="consulting-price">$225 | 90 minutes</div>
+        <p>A longer strategy session for clinicians who have several questions to work through or want dedicated time to map out a larger project.</p>
+        <p>This may be a good fit if you are preparing to launch your practice, restructuring existing systems, adding a clinician, changing your business model, or simply have a long list of questions you want to tackle at once.</p>
+        <p><strong>You will leave with clear priorities and actionable next steps.</strong></p>
+      </div>
+      <div class="consulting-card">
+        <h3>Practice Launch Package</h3>
+        <div class="consulting-price">$695</div>
+        <p>For therapists who want more comprehensive support while starting their private practice.</p>
+        <p><strong>The Practice Launch Package includes:</strong></p>
+        <ul><li>One 90-minute initial planning session</li><li>Two 60-minute follow-up consulting sessions</li><li>One 30-minute follow-up session</li><li>Private practice startup checklist</li><li>Guidance with EHR setup and workflows</li><li>Insurance credentialing roadmap</li><li>CAQH and NPI guidance</li><li>Billing and claims workflow planning</li><li>Intake and documentation workflow planning</li><li>Fee and payment considerations</li><li>Policies and forms checklist</li><li>Personalized next-step recommendations throughout the process</li></ul>
+        <p style="margin-top:16px">Rather than trying to figure everything out at once, we will break the process into manageable steps and focus on what actually needs your attention.</p>
+      </div>
+    </div>
+    <div class="consulting-extra">
+      <h3>Already Have a Practice?</h3>
+      <p>You do not have to be brand new to benefit from consulting.</p>
+      <p>Sometimes the practice is up and running—but the systems behind it are not working as well as they could.</p>
+      <p>Consulting can also help established therapists simplify workflows, troubleshoot credentialing or billing issues, improve practice organization, prepare to add another clinician, or think through the next stage of their business.</p>
+    </div>
+    <div class="consulting-extra">
+      <h3>Not Sure Where to Start?</h3>
+      <p>A <strong>complimentary 15-minute discovery call</strong> is available to help determine whether consulting is a good fit and which option makes the most sense for your needs.</p>
+      <a href="https://kay-arispe.clientsecure.me" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book a Free 15-Minute Discovery Call →</a>
+    </div>
+    <div class="consulting-extra">
+      <h3>A Note About Consulting</h3>
+      <p>Consulting provides education, strategy, resources, and guidance based on professional experience. It is not legal, accounting, tax, or financial advice, and consultation with the appropriate licensed professional may be recommended when needed.</p>
+      <p>Brief clarification questions related to a completed consultation are welcome. Questions requiring additional review, research, or individualized guidance may require another scheduled consultation.</p>
+    </div>
+    <div class="consulting-cta">
+      <h2>Ready to Work on Your <em>Practice?</em></h2>
+      <p>Whether you are building something new or trying to make your existing practice work better, you do not have to figure out every piece on your own.</p>
+      <p><strong>Schedule a consultation with Sage Therapy and Consulting.</strong></p>
+      <a href="https://kay-arispe.clientsecure.me" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Schedule a Consultation →</a>
+    </div>
+  </div>
+</section>
 
 <!-- TRAINING & CLINICAL APPROACH -->
 <section id="approach">
@@ -609,6 +685,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#consulting">Consulting</a>
     <a href="#approach">Approach</a>
     <a href="#booking">Get Started</a>
     <a href="#contact">Contact</a>
