@@ -290,6 +290,12 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
   .therapy-info-grid .consulting-card[style*="grid-template-columns:110px"] img{width:80px!important}
 
 }
+
+/* SIMPLEPRACTICE DISCOVERY CALL WIDGET */
+.spwidget-button-wrapper{text-align:center}
+.spwidget-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 28px;background:var(--sage);color:#fff;border:0;border-radius:var(--radius-pill);font-family:'Nunito',sans-serif;font-size:15px;font-weight:600;text-decoration:none;transition:all .25s}
+.spwidget-button:hover{background:var(--sage-deep);color:#fff;transform:translateY(-2px);box-shadow:0 8px 28px rgba(122,148,114,.35)}
+
 </style>
 </head>
 <body>
@@ -512,7 +518,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
     <div class="consulting-cta">
       <h2>Ready to Work on Your <em>Practice?</em></h2>
       <p>Whether you are building something new or trying to make your existing practice work better, you do not have to figure out every piece on your own.</p>
-      <a href="https://kay-arispe.clientsecure.me" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Schedule a Discovery Call →</a>
+      <div class="spwidget-button-wrapper"><a href="https://kay-arispe.clientsecure.me" class="spwidget-button" data-spwidget-scope-id="f06c80c6-8e63-4999-9b5d-15db04f8c8cc" data-spwidget-scope-uri="kay-arispe" data-spwidget-application-id="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b" data-spwidget-type="OAR" data-spwidget-scope-global data-spwidget-autobind>Schedule a Discovery Call</a></div>
     </div>
     <div class="consulting-extra">
       <h3>A Note About Consulting</h3>
@@ -662,5 +668,6 @@ function toggleFaq(el) {
   if (!isOpen) { answer.style.maxHeight = answer.scrollHeight + 'px'; icon.textContent = '−'; }
 }
 </script>
+<script src="https://widget-cdn.simplepractice.com/assets/integration-1.0.js"></script>
 </body>
 </html>
