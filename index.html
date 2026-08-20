@@ -405,17 +405,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
     <div class="consulting-options" style="margin-top:22px">
       <div class="consulting-card">
         <h3>What We Help With</h3>
-        <div class="about-pills" style="margin-top:14px">
-          <span class="pill pill-sage">Women's Issues</span>
-          <span class="pill pill-tan">ADHD</span>
-          <span class="pill pill-warm">Postpartum & Perinatal</span>
-          <span class="pill pill-sage">Anxiety & Depression</span>
-          <span class="pill pill-tan">Trauma / PTSD</span>
-          <span class="pill pill-warm">Burnout</span>
-          <span class="pill pill-sage">Life Transitions</span>
-          <span class="pill pill-tan">Motherhood</span>
-          <span class="pill pill-warm">Relationship Issues</span>
-        </div>
+        <p>Common areas of focus include anxiety, depression, trauma/PTSD, ADHD, burnout, perinatal mental health, life transitions, motherhood, and relationship concerns.</p>
       </div>
 
       <div class="consulting-card">
@@ -433,7 +423,8 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
       <div class="consulting-card">
         <h3>Insurance & Payment</h3>
         <p><strong>Insurance is accepted for eligible therapy services only.</strong></p>
-        <p style="margin-top:10px">Accepted plans include BCBS, Medicare, Nebraska Medicaid, Aetna, UnitedHealthcare, CHAMPVA, Medica, Lyra Health, Midlands Choice, and self-pay.</p>
+        <p style="margin-top:10px">Accepted plans include BCBS, Medicare, Nebraska Medicaid, Aetna, UnitedHealthcare, CHAMPVA, Medica, Lyra Health, and Midlands Choice.</p>
+        <p style="margin-top:10px">Self-pay is also available. Contact Sage Therapy & Consulting with questions about coverage, current fees, or payment options.</p>
       </div>
     </div>
 
@@ -646,6 +637,16 @@ function toggleMenu() {
   const open = links.style.display === 'flex';
   links.style.cssText = open ? '' : 'display:flex;flex-direction:column;position:fixed;top:76px;right:20px;background:white;padding:16px;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.1);z-index:200;gap:4px';
 }
+
+function closeMobileMenu() {
+  if (window.innerWidth <= 768) {
+    document.querySelector('.nav-links').style.cssText = '';
+  }
+}
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', closeMobileMenu);
+});
 
 function toggleFaq(el) {
   const answer = el.nextElementSibling;
