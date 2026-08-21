@@ -543,6 +543,38 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
           </div>
 
           <div class="form-group">
+            <label for="consult-phone">Phone number</label>
+            <input type="tel" id="consult-phone" name="Phone Number" autocomplete="tel" placeholder="Especially helpful if you prefer phone or text">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="consult-clinician-type">What type of clinician are you? *</label>
+              <select id="consult-clinician-type" name="Clinician Type" required>
+                <option value="">Select one</option>
+                <option>Clinical Social Worker</option>
+                <option>Licensed Mental Health Counselor / Professional Counselor</option>
+                <option>Marriage and Family Therapist</option>
+                <option>Psychologist</option>
+                <option>Psychiatric / Mental Health Nurse Practitioner</option>
+                <option>Other licensed mental health clinician</option>
+                <option>Pre-licensed / provisionally licensed clinician</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="consult-contact-method">Preferred contact method *</label>
+              <select id="consult-contact-method" name="Preferred Contact Method" required>
+                <option value="">Select one</option>
+                <option>Email</option>
+                <option>Phone call</option>
+                <option>Text message</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
             <label for="consult-stage">Where are you in your practice journey? *</label>
             <select id="consult-stage" name="Practice Stage" required>
               <option value="">Select one</option>
@@ -556,12 +588,25 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
           </div>
 
           <div class="form-group">
+            <label for="consult-support-level">Which of these sounds most like you right now? *</label>
+            <select id="consult-support-level" name="Support Level" required>
+              <option value="">Select one</option>
+              <option>I want total support — I have no clue what I’m doing and want guidance through the process</option>
+              <option>I have a few questions and need some clarity, but I feel pretty confident in my abilities</option>
+              <option>I mainly want general information about what Sage can help with</option>
+              <option>I know what I need help with and want focused support in a few specific areas</option>
+              <option>I already have a practice and need help troubleshooting, organizing, or growing it</option>
+              <option>I’m not sure yet — I need help figuring out what kind of support would be useful</option>
+            </select>
+          </div>
+
+          <div class="form-group">
             <label for="consult-help">What would you like help with? *</label>
             <textarea id="consult-help" name="What they need help with" required placeholder="Tell me what you are working on, where you feel stuck, or what questions you are hoping to work through."></textarea>
           </div>
 
           <div class="form-group">
-            <label for="consult-support">What kind of support are you looking for?</label>
+            <label for="consult-support">What kind of consulting format sounds most helpful?</label>
             <select id="consult-support" name="Preferred Support">
               <option value="">I’m not sure yet</option>
               <option>A single focused consultation</option>
