@@ -558,6 +558,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
                 <option>Psychologist</option>
                 <option>Psychiatric / Mental Health Nurse Practitioner</option>
                 <option>Other licensed mental health clinician</option>
+                <option>Healthcare professional (Nurse, PT, OT, SLP, Physician)</option>
                 <option>Pre-licensed / provisionally licensed clinician</option>
                 <option>Other</option>
               </select>
@@ -601,19 +602,29 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
           </div>
 
           <div class="form-group">
-            <label for="consult-help">What would you like help with? *</label>
-            <textarea id="consult-help" name="What they need help with" required placeholder="Tell me what you are working on, where you feel stuck, or what questions you are hoping to work through."></textarea>
+            <label for="consult-location">Where are you located? *</label>
+            <input type="text" id="consult-location" name="Location" required placeholder="City and state">
           </div>
 
           <div class="form-group">
-            <label for="consult-support">What kind of consulting format sounds most helpful?</label>
-            <select id="consult-support" name="Preferred Support">
-              <option value="">I’m not sure yet</option>
-              <option>A single focused consultation</option>
-              <option>A longer strategy session</option>
-              <option>Ongoing support / multiple follow-ups</option>
-              <option>A customized launch or growth package</option>
+            <label for="consult-setting">How would you prefer to meet for consulting? *</label>
+            <select id="consult-setting" name="Consulting Meeting Preference" required>
+              <option value="">Select one</option>
+              <option>Online consulting</option>
+              <option>In person at the Sage Therapy & Consulting office in Blair, Nebraska</option>
+              <option>In person at an agreed-upon location in the Omaha metro</option>
+              <option>A combination of online and in-person consulting</option>
+              <option>I’m not sure yet / I’m flexible</option>
             </select>
+          </div>
+
+          <div style="background:var(--sage-light);border:1px solid var(--sage-mid);border-radius:14px;padding:14px 16px;margin:2px 0 16px;font-size:13.5px;color:var(--sage-deep);line-height:1.7">
+            Consulting services are available online throughout the United States. In-person consulting is available at the Sage Therapy & Consulting office in Blair, Nebraska, or at an agreed-upon location in the Omaha metro.
+          </div>
+
+          <div class="form-group">
+            <label for="consult-help">What would you like help with? *</label>
+            <textarea id="consult-help" name="What they need help with" required placeholder="Tell me what you are working on, where you feel stuck, or what questions you are hoping to work through."></textarea>
           </div>
 
           <div class="form-group">
