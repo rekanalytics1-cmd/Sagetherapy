@@ -83,7 +83,7 @@ html{font-family:'Nunito',sans-serif;color:var(--text);background:var(--cream);f
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 5%;display:flex;align-items:center;justify-content:space-between;background:rgba(250,248,242,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(221,216,200,.5);transition:box-shadow .3s}
 nav.scrolled{box-shadow:0 2px 24px rgba(122,148,114,.12)}
 .nav-brand{display:flex;align-items:center;gap:12px}
-.nav-logo{height:52px;width:auto}
+.nav-logo{height:48px;width:auto;object-fit:contain;display:block}
 .nav-brand-text{display:flex;flex-direction:column}
 .nav-brand-name{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--sage-deep);line-height:1.1}
 .nav-brand-sub{font-size:11px;font-weight:500;color:var(--muted);letter-spacing:.04em}
@@ -106,7 +106,7 @@ nav.scrolled{box-shadow:0 2px 24px rgba(122,148,114,.12)}
 .hero-content{position:relative;z-index:1;max-width:640px}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);border-radius:var(--radius-pill);padding:6px 16px;font-size:13px;font-weight:600;color:white;margin-bottom:24px;letter-spacing:.03em;backdrop-filter:blur(8px)}
 .hero-eyebrow::before{content:'';width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.8);display:inline-block}
-.hero-logo-large{height:160px;width:auto;margin-bottom:20px;display:block}
+.hero-logo-large{height:150px;width:auto;margin:10px 0 20px;display:block;object-fit:contain;object-position:center}
 h1{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,56px);font-weight:500;line-height:1.2;color:white;margin-bottom:20px;letter-spacing:-.01em}
 h1 em{font-style:italic;color:var(--tan-light)}
 .hero-sub{font-size:17px;color:rgba(255,255,255,.88);font-weight:400;max-width:500px;margin-bottom:36px;line-height:1.8}
@@ -278,7 +278,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:48px 5% 32px;te
   .hero-left,.hero-right{height:700px}
   .hero-left{padding:115px 6% 60px}
   .hero-sub{font-size:15.5px;line-height:1.65}
-  .hero-logo-large{height:130px}
+  .hero-logo-large{height:125px;margin-top:10px}
 }
 
 @media(max-width:768px){
